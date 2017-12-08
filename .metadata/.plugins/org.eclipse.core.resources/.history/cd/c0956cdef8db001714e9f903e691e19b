@@ -1,0 +1,31 @@
+package com.stock.mvc.entites;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Categorie implements Serializable{
+
+	@Id
+	@GeneratedValue
+	private Long idCaterogie;
+	
+	private String code;
+	private String designation;
+	
+	private List<Article> articles;
+	
+	
+
+	public Long getIdCaterogie() {
+		return idCaterogie;
+	}
+
+	public void setIdCaterogie(Long idCaterogie) {
+		this.idCaterogie = idCaterogie;
+	}
+}

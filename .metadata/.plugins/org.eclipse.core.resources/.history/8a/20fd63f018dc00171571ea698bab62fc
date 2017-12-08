@@ -1,0 +1,33 @@
+package com.stock.mvc.entites;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+public class MvtStock implements Serializable{
+
+	@Id
+	@GeneratedValue
+	private Long idMvtStock;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date dateMvtStock;
+
+	public Long getIdMvtStock() {
+		return idMvtStock;
+	}
+
+	public void setIdMvtStock(Long idMvtStock) {
+		this.idMvtStock = idMvtStock;
+	}
+
+	
+
+	
+}

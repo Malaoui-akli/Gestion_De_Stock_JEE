@@ -1,0 +1,27 @@
+package com.stock.mvc.entites;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class MvtStock implements Serializable{
+
+	@Id
+	@GeneratedValue
+	private Long idMvtStock;
+
+	public Long getIdMvtStock() {
+		return idMvtStock;
+	}
+
+	public void setIdMvtStock(Long idMvtStock) {
+		this.idMvtStock = idMvtStock;
+	}
+
+	
+
+	
+}

@@ -1,0 +1,31 @@
+package com.stock.mvc.entites;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Client implements Serializable{
+
+	@Id
+	@GeneratedValue
+	private Long idClient;
+	
+	private String nom;
+	private String prenom;
+	private String mail;
+	private String photo;
+	private String adresse;
+
+	public Long getIdClient() {
+		return idClient;
+	}
+
+	public void setIdClient(Long idClient) {
+		this.idClient = idClient;
+	}
+
+	
+}

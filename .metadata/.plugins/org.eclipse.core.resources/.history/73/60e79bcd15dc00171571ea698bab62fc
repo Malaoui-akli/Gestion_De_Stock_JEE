@@ -1,0 +1,27 @@
+package com.stock.mvc.entites;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class LigneCmdFournisseur implements Serializable{
+
+	@Id
+	@GeneratedValue
+	private Long idLigneCmdFournisseur;
+
+	public Long getIdLigneCmdFournisseur() {
+		return idLigneCmdFournisseur;
+	}
+
+	public void setIdLigneCmdFournisseur(Long idLigneCmdFournisseur) {
+		this.idLigneCmdFournisseur = idLigneCmdFournisseur;
+	}
+
+	
+
+	
+}

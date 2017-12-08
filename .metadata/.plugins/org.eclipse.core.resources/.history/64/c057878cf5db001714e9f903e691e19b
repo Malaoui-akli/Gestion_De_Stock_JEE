@@ -1,0 +1,25 @@
+package com.stock.mvc.entites;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class ComandeClient implements Serializable{
+
+	@Id
+	@GeneratedValue
+	private Long idCommandClt;
+
+	public Long getIdCommandClt() {
+		return idCommandClt;
+	}
+
+	public void setIdCommandClt(Long idCommandClt) {
+		this.idCommandClt = idCommandClt;
+	}
+
+	
+}
